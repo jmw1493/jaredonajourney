@@ -1,0 +1,34 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header {
+  font-size: 1.5em;
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background: #3D518C;
+  border-bottom: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    // color: orange;
+    // font-family: 'URW Chancery L';
+  }

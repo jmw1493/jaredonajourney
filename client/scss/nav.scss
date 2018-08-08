@@ -1,0 +1,52 @@
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// #profile-photo {
+//   position: absolute;
+//   z-index: 1;
+//   opacity: 0;
+//   animation-duration: 1s;
+//   animation-name: fadeIn;
+//   animation-delay: 0.75s;
+//   animation-fill-mode: forwards;
+//   /* animation: 1s ease-out 0s 1 fadeIn; */
+//   height: 200px;
+// }
+
+nav {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 100%; 
+  // background: black;
+  // opacity: 0;
+  // animation-duration: 1s;
+  // animation-name: fadeIn;
+  // animation-delay: 0.75s;
+  // animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.tab {
+  border: 1px solid black;
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background: #7692FF;
+}
+
+.active {
+  background: white;
+  color: black;
+}

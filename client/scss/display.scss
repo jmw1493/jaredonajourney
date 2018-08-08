@@ -1,81 +1,3 @@
-@mixin transform($property) {
-  -webkit-transform: $property;
-      -ms-transform: $property;
-          transform: $property;
-}
-// .box { @include transform(rotate(30deg)); }
-
-
-app {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-header {
-  animation: 0.5s ease-out 0s 1 slideInFromLeft;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-}
-
-header p {
-  margin: 0;
-  padding: 0;
-  // font-family: 'URW Chancery L';
-}
-
-#main-screen {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: absolute;
-  top: 50px;
-  bottom: 0;
-  left: 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
-nav {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 0;
-  width: 100px;
-  height: 100%; 
-  // border: 1px solid yellow;
-}
-
-main {
-  height: 100%;
-  left: 30px;
-  right: 0;
-  // border: 1px solid blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #display {
   height: 500px;
   width: 500px;
@@ -103,25 +25,10 @@ main {
   animation-delay: 0.75s;
   animation-fill-mode: forwards;
   /* animation: 1s ease-out 0s 1 fadeIn; */
-  height: 200px;
+  height: 300px;
 }
 
 @keyframes projectOne {
-  from {
-		transform: rotate(0deg)
-		           translate(0px)
-               rotate(0deg);
-               opacity: 0.5;
-	}
-	to {
-		transform: rotate(315deg)
-		           translate(250px) 
-               rotate(-315deg);
-               opacity: 1;
-	}
-}
-	
-@keyframes projectTwo {
 	from {
 		transform: rotate(0deg)
                translate(0px)
@@ -130,11 +37,27 @@ main {
 	}
 	to {
 		transform: rotate(225deg)
-               translate(250px) 
+               translate(325px) 
                rotate(-225deg);
                opacity: 1;
 	}
 }
+
+@keyframes projectTwo {
+  from {
+		transform: rotate(0deg)
+		           translate(0px)
+               rotate(0deg);
+               opacity: 0.5;
+	}
+	to {
+		transform: rotate(315deg)
+		           translate(325px) 
+               rotate(-315deg);
+               opacity: 1;
+	}
+}
+
 @keyframes projectThree {
 	from {
 		transform: rotate(0deg)
@@ -143,12 +66,13 @@ main {
                opacity: 0.5;
 	}
 	to {
-		transform: rotate(135deg)
-		           translate(250px) 
-               rotate(-135deg);
+		transform: rotate(360deg)
+		           translate(325px) 
+               rotate(-360deg);
                opacity: 1;
 	}
 }
+	
 @keyframes projectFour {
 	from {
 		transform: rotate(0deg)
@@ -158,19 +82,58 @@ main {
 	}
 	to {
 		transform: rotate(45deg)
-		           translate(250px) 
+		           translate(325px) 
                rotate(-45deg);
                opacity: 1;
 	}
 }
 
+@keyframes projectFive {
+	from {
+		transform: rotate(0deg)
+               translate(0px)
+               rotate(0deg);
+               opacity: 0.5;
+	}
+	to {
+		transform: rotate(135deg)
+		           translate(325px) 
+               rotate(-135deg);
+               opacity: 1;
+	}
+}
+
+@keyframes projectSix {
+	from {
+		transform: rotate(0deg)
+               translate(0px)
+               rotate(0deg);
+               opacity: 0.5;
+	}
+	to {
+		transform: rotate(180deg)
+		           translate(325px) 
+               rotate(-180deg);
+               opacity: 1;
+	}
+}
+
 .project {
-  opacity: 0;
+  opacity: 0; 
   position: absolute;
   z-index: 0;
   height: 100px;
-  width: 100px;
+  width: 300px;
   border: 1px solid black;
+  background: #7692FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background: white;
+  color: black;
 }
 
 #one {
@@ -193,6 +156,18 @@ main {
 
 #four {
   animation: projectFour 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+#five {
+  animation: projectFive 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+#six {
+  animation: projectSix 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }

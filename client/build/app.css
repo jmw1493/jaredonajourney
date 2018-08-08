@@ -53,6 +53,8 @@ nav {
   left: 0;
   width: 100px;
   height: 100%;
+  border: 5px solid green;
+
 }
 
 main {
