@@ -10,8 +10,8 @@ class Nav extends Component {
       <nav>
         <NavLink 
           to='/about' 
-          style={{ textDecoration: 'none', color: 'black' }} 
-          activeStyle={{ color: 'white', background: 'blue' }}
+          style={{ textDecoration: 'none', color: 'white' }} 
+          activeStyle={{ color: 'white', background: 'rgb(65, 65, 250)' }}
           className={`tab ${this.props.HS ? '' : 'not-home-nav'}`} 
           onMouseOver={this.props.changeTab}
         >About Me</NavLink>
@@ -20,40 +20,40 @@ class Nav extends Component {
           to='/fill-in-later' 
           className={`tab ${this.props.HS ? '' : 'not-home-nav'}`} 
           onMouseOver={this.props.changeTab}
-          style={{ textDecoration: 'none', color: 'black' }} 
-          activeStyle={{ color: 'white', background: 'blue' }}
+          style={{ textDecoration: 'none', color: 'white' }} 
+          activeStyle={{ color: 'white', background: 'rgb(65, 65, 250)' }}
         >fill in later</NavLink>
 
         <NavLink 
           to='/projects' 
           className={`tab ${this.props.HS ? '' : 'not-home-nav'}`} 
           onMouseOver={this.props.changeTab}
-          style={{ textDecoration: 'none', color: 'black' }} 
-          activeStyle={{ color: 'white', background: 'blue' }}
+          style={{ textDecoration: 'none', color: 'white' }} 
+          activeStyle={{ color: 'white', background: 'rgb(65, 65, 250)' }}
         >Projects</NavLink>
 
         <NavLink 
           to='/coding-blogs' 
           className={`tab ${this.props.HS ? '' : 'not-home-nav'}`} 
           onMouseOver={this.props.changeTab}
-          style={{ textDecoration: 'none', color: 'black' }} 
-          activeStyle={{ color: 'white', background: 'blue' }}
+          style={{ textDecoration: 'none', color: 'white' }} 
+          activeStyle={{ color: 'white', background: 'rgb(65, 65, 250)' }}
         >Coding Blogs</NavLink>
 
         <NavLink 
           to='/travel-blogs' 
           className={`tab ${this.props.HS ? '' : 'not-home-nav'}`} 
           onMouseOver={this.props.changeTab}
-          style={{ textDecoration: 'none', color: 'black' }} 
-          activeStyle={{ color: 'white', background: 'blue' }}
+          style={{ textDecoration: 'none', color: 'white' }} 
+          activeStyle={{ color: 'white', background: 'rgb(65, 65, 250)' }}
         >Travel Blogs</NavLink>
 
         <NavLink 
           to='/contact' 
           className={`tab ${this.props.HS ? '' : 'not-home-nav'}`} 
           onMouseOver={this.props.changeTab}
-          style={{ textDecoration: 'none', color: 'black' }} 
-          activeStyle={{ color: 'white', background: 'blue' }}
+          style={{ textDecoration: 'none', color: 'white' }} 
+          activeStyle={{ color: 'white', background: 'rgb(65, 65, 250)' }}
         >Contact</NavLink>
       </nav>
     );

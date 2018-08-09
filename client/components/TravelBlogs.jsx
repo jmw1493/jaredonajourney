@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Day1 from './travel-blogs/day1.jsx';
 
 class TravelBlogs extends Component {
 
@@ -6,6 +7,7 @@ class TravelBlogs extends Component {
     return (
       <div id='travel-blogs'>
         <p>TravelBlogs</p>
+        <Day1/>
       </div>
     );
   }

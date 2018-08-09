@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <div className='app'>
         <div id='set-image-bg'>
-          <Header />
+          <Header HS={this.state.homeScreen} toggleHS={this.toggleHomeScreen}/>
           <MainScreen 
             tab={this.state.tab} 
             changeTab={this.changeTab} 
