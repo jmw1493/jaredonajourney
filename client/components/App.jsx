@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import MainScreen from './MainScreen';
+import Header from './Header.jsx';
+import MainScreen from './MainScreen.jsx';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       tab: '',
+      // page: '',
       homeScreen: true
     }
     this.changeTab = this.changeTab.bind(this)
+    // this.changePage = this.changePage.bind(this)
     this.toggleHomeScreen = this.toggleHomeScreen.bind(this)
   }
 
@@ -21,6 +23,14 @@ class App extends Component {
       tab: e.target.className.slice(0, e.target.className.indexOf(' '))
     })
   }
+
+  // changePage(page) {
+  //   console.log('homescreen ' + this.state.homeScreen)
+  //   console.log('new homescreen state ' + !this.state.homeScreen)
+  //   this.setState({
+  //     page
+  //   })
+  // }
 
   toggleHomeScreen() {
     console.log('homescreen ' + this.state.homeScreen)
@@ -39,6 +49,8 @@ class App extends Component {
             tab={this.state.tab} 
             changeTab={this.changeTab} 
             HS={this.state.homeScreen}
+            // page={this.state.page}
+            // changePage={this.state.changePage}
             toggleHS={this.toggleHomeScreen}
           />
         </div>
