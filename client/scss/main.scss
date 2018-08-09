@@ -1,9 +1,18 @@
-@keyframes fadeIn {
+@keyframes fadeInNotHome {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0.7;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -15,12 +24,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ABD2FA;
-  opacity: 0;
-  animation-duration: 1s;
-  animation-name: fadeIn;
-  animation-delay: 0.75s;
-  animation-fill-mode: forwards;
+  // background: #ABD2FA;
+  // background-image: url("../img/sunrise.jpg");
+
+  // opacity: 0;
+  // animation-duration: 1s;
+  // animation-name: fadeIn;
+  // animation-delay: 0.75s;
+  // animation-fill-mode: forwards;
+  overflow: scroll;
 }
 
 .home {
@@ -31,4 +43,8 @@ main {
 .not-home {
   left: 20%;
   width: 80%;
+  animation-duration: 0.75s;
+  animation-name: fadeInNotHome;
+  background: white;
+  opacity: 0.7;
 }

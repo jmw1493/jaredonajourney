@@ -26,6 +26,8 @@
   animation-fill-mode: forwards;
   /* animation: 1s ease-out 0s 1 fadeIn; */
   height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 @keyframes projectOne {
@@ -33,13 +35,13 @@
 		transform: rotate(0deg)
                translate(0px)
                rotate(0deg);
-               opacity: 0.5;
+               opacity: 0;
 	}
 	to {
 		transform: rotate(225deg)
                translate(325px) 
                rotate(-225deg);
-               opacity: 1;
+               opacity: 0.7;
 	}
 }
 
@@ -48,13 +50,13 @@
 		transform: rotate(0deg)
 		           translate(0px)
                rotate(0deg);
-               opacity: 0.5;
+               opacity: 0;
 	}
 	to {
 		transform: rotate(315deg)
 		           translate(325px) 
                rotate(-315deg);
-               opacity: 1;
+               opacity: 0.7;
 	}
 }
 
@@ -63,13 +65,13 @@
 		transform: rotate(0deg)
                translate(0px)
                rotate(0deg);
-               opacity: 0.5;
+               opacity: 0;
 	}
 	to {
 		transform: rotate(360deg)
 		           translate(325px) 
                rotate(-360deg);
-               opacity: 1;
+               opacity: 0.7;
 	}
 }
 	
@@ -78,13 +80,13 @@
 		transform: rotate(0deg)
                translate(0px)
                rotate(0deg);
-               opacity: 0.5;
+               opacity: 0;
 	}
 	to {
 		transform: rotate(45deg)
 		           translate(325px) 
                rotate(-45deg);
-               opacity: 1;
+               opacity: 0.7;
 	}
 }
 
@@ -93,13 +95,13 @@
 		transform: rotate(0deg)
                translate(0px)
                rotate(0deg);
-               opacity: 0.5;
+               opacity: 0;
 	}
 	to {
 		transform: rotate(135deg)
 		           translate(325px) 
                rotate(-135deg);
-               opacity: 1;
+               opacity: 0.7;
 	}
 }
 
@@ -108,66 +110,69 @@
 		transform: rotate(0deg)
                translate(0px)
                rotate(0deg);
-               opacity: 0.5;
+               opacity: 0;
 	}
 	to {
 		transform: rotate(180deg)
 		           translate(325px) 
                rotate(-180deg);
-               opacity: 1;
+               opacity: 0.7;
 	}
 }
 
 .project {
+  font-size: 1.25em;
   opacity: 0; 
   position: absolute;
   z-index: 0;
   height: 100px;
   width: 300px;
-  border: 1px solid black;
-  background: #7692FF;
+  border: 1px solid rgb(197, 197, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  // background: #7692FF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .active {
-  background: white;
-  color: black;
+  background: blue;
+//   color: white;
 }
 
 #one {
-  animation: projectOne 2s;
+  animation: projectOne 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }
 
 #two {
-  animation: projectTwo 2s;
+  animation: projectTwo 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }
 
 #three {
-  animation: projectThree 2s;
+  animation: projectThree 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }
 
 #four {
-  animation: projectFour 2s;
+  animation: projectFour 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }
 
 #five {
-  animation: projectFive 2s;
+  animation: projectFive 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }
 
 #six {
-  animation: projectSix 2s;
+  animation: projectSix 1.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }

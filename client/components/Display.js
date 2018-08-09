@@ -15,25 +15,25 @@ class Display extends Component {
         >About Me</div>
         <div 
           id='two' 
+          className={`fill-in-later project ${this.props.tab === 'fill-in-later' ? 'active' : ''}`} onMouseOver={this.props.changeTab}
+          onClick={this.props.toggleHS}
+        >fill in later</div>
+        <div 
+          id='three' 
           className={`projects project ${this.props.tab === 'projects' ? 'active' : ''}`} 
           onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
         >Projects</div>
         <div 
-          id='three' 
+          id='four' 
           className={`coding-blogs project ${this.props.tab === 'coding-blogs' ? 'active' : ''}`} onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
         >Coding Blogs</div>
         <div 
-          id='four' 
+          id='five' 
           className={`travel-blogs project ${this.props.tab === 'travel-blogs' ? 'active' : ''}`} onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
         >Travel Blogs</div>
-        <div 
-          id='five' 
-          className={`fill-in-later project ${this.props.tab === 'fill-in-later' ? 'active' : ''}`} onMouseOver={this.props.changeTab}
-          onClick={this.props.toggleHS}
-        >fill in later</div>
         <div 
           id='six' 
           className={`contact project ${this.props.tab === 'contact' ? 'active' : ''}`} 

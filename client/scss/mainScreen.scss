@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  // height: 100%;
   position: absolute;
   top: 50px;
   bottom: 0;
@@ -9,4 +10,11 @@
   /* display: flex;
   justify-content: center;
   align-items: center; */
+  background-image: url("../img/sunrise.jpg");
+  // background-position-x: 50%;
+  // background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // display: flex;
+  // justify-content: center;
 }

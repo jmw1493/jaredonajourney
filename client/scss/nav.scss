@@ -1,11 +1,11 @@
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .7;
+  }
+}
 
 // #profile-photo {
 //   position: absolute;
@@ -28,25 +28,36 @@ nav {
   height: 100%; 
   // background: black;
   // opacity: 0;
-  // animation-duration: 1s;
-  // animation-name: fadeIn;
+  animation-duration: 0.75s;
+  animation-name: fadeIn;
   // animation-delay: 0.75s;
-  // animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
+
+  //make this look good --> box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .tab {
+  font-size: 1.25em;
   border: 1px solid black;
   flex: 1;
   display: flex;
   justify-content: center; 
   align-items: center;
-  background: #7692FF;
+  background: white;
+  color: black;
+  opacity: 0.6;
 }
 
 .active {
-  background: white;
-  color: black;
+  background: blue;
+  color: white;
+}
+
+.not-home-nav {
+  color: white;
+  background: rgb(80, 79, 79);
 }
