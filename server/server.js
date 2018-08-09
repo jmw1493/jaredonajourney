@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+// app.get('*', (req, res, next) => {
+//   res.sendFile(path.resolve(__dirname, '../client/build/index.html'));
+// });
+
 app.listen(3000, () => {
   console.log('hellooooooo');
 });

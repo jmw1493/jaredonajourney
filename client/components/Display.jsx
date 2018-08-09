@@ -1,45 +1,57 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import profilePhoto from '../img/IMG_8232.jpg';
 
 class Display extends Component {
-// about me, projects, blogs, travel
   render() {
     return (
       <div id='display'>
         <img id='profile-photo' src={profilePhoto} alt="profile-photo"/>
-        <div 
+        <Link 
+          style={{ textDecoration: 'none', color: 'black' }} 
           id='one'  
-          className={`about-me project ${this.props.tab === 'about-me' ? 'active' : ''}`} 
+          className={`about project ${this.props.tab === 'about' ? 'active' : ''}`} 
           onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
-        >About Me</div>
-        <div 
+          to='/about'
+        >About Me</Link>
+        <Link 
+          style={{ textDecoration: 'none', color: 'black' }} 
           id='two' 
           className={`fill-in-later project ${this.props.tab === 'fill-in-later' ? 'active' : ''}`} onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
-        >fill in later</div>
-        <div 
+          to='/fill-in-later'
+        >fill in later</Link>
+        <Link 
+          style={{ textDecoration: 'none', color: 'black' }} 
           id='three' 
           className={`projects project ${this.props.tab === 'projects' ? 'active' : ''}`} 
           onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
-        >Projects</div>
-        <div 
+          to='/projects'
+        >Projects</Link>
+        <Link 
+          style={{ textDecoration: 'none', color: 'black' }} 
           id='four' 
           className={`coding-blogs project ${this.props.tab === 'coding-blogs' ? 'active' : ''}`} onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
-        >Coding Blogs</div>
-        <div 
+          to='/coding-blogs'
+        >Coding Blogs</Link>
+        <Link 
+          style={{ textDecoration: 'none', color: 'black' }} 
           id='five' 
           className={`travel-blogs project ${this.props.tab === 'travel-blogs' ? 'active' : ''}`} onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
-        >Travel Blogs</div>
-        <div 
+          to='/travel-blogs'
+        >Travel Blogs</Link>
+        <Link 
+          style={{ textDecoration: 'none', color: 'black' }} 
           id='six' 
           className={`contact project ${this.props.tab === 'contact' ? 'active' : ''}`} 
           onMouseOver={this.props.changeTab}
           onClick={this.props.toggleHS}
-        >Contact</div>
+          to='/contact'
+        >Contact</Link>
       </div>
     );
   }
