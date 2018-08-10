@@ -16,7 +16,7 @@ class Header extends Component {
     return (
       <header>
         {/* <p>JaredOnAJourney</p> */}
-        <Link to='/' style={{ textDecoration: 'none', color: 'black' }} onClick={this.headerToggleHS}>JaredOnAJoal;skdjurney</Link>
+        <Link to='/' style={{ textDecoration: 'none', color: 'black' }} onClick={this.headerToggleHS}>JaredOnAJourney</Link>
       </header>
     );
   }
