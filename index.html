@@ -6,8 +6,9 @@
 <body>
   <div id="root"></div>
 
-  <script type="text/javascript" src="./client/build/webpack-bundle.js"></script>
-  <!-- <script src="./client/build/webpack-bundle.js"></script>  <- this is wrong b/c this src gets sent to server as a url, not a path, so the right code requests site/webpack-bundle.js, and server goes to /client/build/webpack-bundle.js -->
+  <!-- <script type="text/javascript" src="./webpack-bundle.js"></script> -->
+  <script type="text/javascript" src="./client/build/webpack-bundle.js"></script> <!-- <- use for github pages -->
+  <!--  ^ this is wrong (when using my server, ie, not github pages) b/c this src gets sent to server as a url, not a path, so the right code requests site/webpack-bundle.js, and server goes to /client/build/webpack-bundle.js -->
 
 </body>
 </html>
