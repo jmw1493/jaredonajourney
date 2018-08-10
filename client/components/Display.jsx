@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import profilePhoto from '../img/main-photo.jpg';
+import profilePhoto from '../build/06c7d196428cd53c6c407755852c38e9.jpg';
 
 class Display extends Component {
   render() {

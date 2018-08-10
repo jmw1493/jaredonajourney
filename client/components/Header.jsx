@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import planeImage from '../img/1a2.svg';
+// import planeImage from '../img/1a2.svg';
 
 class Header extends Component {
   constructor() {
