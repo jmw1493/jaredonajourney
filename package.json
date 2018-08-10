@@ -7,7 +7,8 @@
     "start": "node server/server.js",
     "webpack": "./node_modules/.bin/webpack -w",
     "wds": "webpack-dev-server --config ./webpack.config.js -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d client/build"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,10 @@
   "bugs": {
     "url": "https://github.com/jmw1493/jaredonajourney/issues"
   },
-  "homepage": "https://github.com/jmw1493/jaredonajourney#readme",
+  "homepage": "https://jmw1493.github.io/jaredonajourney",
   "dependencies": {
     "express": "^4.16.3",
+    "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
