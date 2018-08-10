@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import profilePhoto from './client/build/06c7d196428cd53c6c407755852c38e9.jpg';
+import profilePhoto from '../img/main-photo.jpg';
 
 // import profilePhoto from '../img/main-photo.jpg';
 
