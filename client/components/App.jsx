@@ -16,21 +16,10 @@ class App extends Component {
   }
 
   changeTab(e) {
-    console.log('current tab state is ' + this.state.tab)
-    console.log('hover is ' + e.target.className)
-    console.log(e.target.className.slice(0, e.target.className.indexOf(' ')))
     this.setState({
       tab: e.target.className.slice(0, e.target.className.indexOf(' '))
     })
   }
-
-  // changePage(page) {
-  //   console.log('homescreen ' + this.state.homeScreen)
-  //   console.log('new homescreen state ' + !this.state.homeScreen)
-  //   this.setState({
-  //     page
-  //   })
-  // }
 
   toggleHomeScreen() {
     console.log('homescreen ' + this.state.homeScreen)
@@ -49,8 +38,6 @@ class App extends Component {
             tab={this.state.tab} 
             changeTab={this.changeTab} 
             HS={this.state.homeScreen}
-            // page={this.state.page}
-            // changePage={this.state.changePage}
             toggleHS={this.toggleHomeScreen}
           />
         </div>

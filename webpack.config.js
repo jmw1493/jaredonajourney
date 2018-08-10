@@ -11,8 +11,8 @@ module.exports = {
     filename: 'webpack-bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, ""),
-    // contentBase: path.join(__dirname, "./client/build"),
+    // contentBase: path.join(__dirname, ""),
+    contentBase: path.join(__dirname, "./client/build"),
   },
   module: {
     rules: [
