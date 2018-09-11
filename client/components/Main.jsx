@@ -17,16 +17,29 @@ class Main extends Component {
       // <main className={!this.props.page ? 'home' : 'not-home'}> 
       <main className={this.props.HS ? 'home' : 'not-home'}> 
         <Switch>
-          <Route exact path="/about" render={() => (<About/>)}/>
-          <Route exact path="/fill-in-later" render={() => (<FillInLater/>)}/>
-          <Route exact path="/projects" render={() => (<Projects/>)}/>
-          <Route exact path="/coding-blogs" render={() => (<CodingBlogs/>)}/>
-          <Route exact path="/travel-blogs" render={() => (<TravelBlogs/>)}/>
-          <Route exact path="/contact" render={() => (<Contact/>)}/>
+          <Route exact path="/about" render={() => (
+            <About HS={this.props.HS} toggleHS={this.props.toggleHS}/>
+          )}/>
+          <Route exact path="/fill-in-later" render={() => (
+            <FillInLater HS={this.props.HS} toggleHS={this.props.toggleHS}/>
+          )}/>
+          <Route exact path="/projects" render={() => (
+            <Projects HS={this.props.HS} toggleHS={this.props.toggleHS}/>
+          )}/>
+          <Route exact path="/coding-blogs" render={() => (
+            <CodingBlogs HS={this.props.HS} toggleHS={this.props.toggleHS}/>
+          )}/>
+          <Route exact path="/travel-blogs" render={() => (
+            <TravelBlogs HS={this.props.HS} toggleHS={this.props.toggleHS}/>
+          )}/>
+          <Route exact path="/contact" render={() => (
+            <Contact HS={this.props.HS} toggleHS={this.props.toggleHS}/>
+          )}/>
           <Route render={() => (
             <Display 
               tab={this.props.tab} 
               changeTab={this.props.changeTab} 
+              HS={this.props.HS}
               toggleHS={this.props.toggleHS}
               // changePage={this.props.changePage}
             />

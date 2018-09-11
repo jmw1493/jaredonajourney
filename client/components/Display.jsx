@@ -5,6 +5,11 @@ import profilePhoto from '../img/main-photo.jpg';
 // import profilePhoto from '../img/main-photo.jpg';
 
 class Display extends Component {
+
+  componentDidMount() {
+    if (!this.props.HS) this.props.toggleHS();
+  }
+
   render() {
     return (
       <div id='display'>
